@@ -1,699 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-
-██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
-██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
-╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
-░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
-░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
-░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
-░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
-░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
-░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
-██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
-╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
-░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
-What are you doing here?! you sneaky developer...
--->
-
 <head>
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-YMWDE0VTD3");
-  </script>
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="description"
-    content="Wendy Black | Portfolio, Visit and know about me & my projects. I value simple content structure, clean design patterns, and thoughtful interactions." />
-  <meta name="keywords"
-    content="Wendy Black,Wendy Black portfolio,Wendy Black Portfolio,WendyBlack,Wendy Black site,Wendy Black Site,Wendy Black me,Wendy Black web,Wendy Black github,WendyBlack site,WendyBlack uiverse,uiverse,Wendy Black uiverse,Wendy Black frontend developer,frontend developer,Wendy Black jaipur" />
-  <meta name="author" content="Wendy Black" />
-  <meta property="og:image" content="./src/png/Preview-card-min.png" />
-  <meta property="og:title" content="Wendy Black | Portfolio" />
-  <meta property="og:description"
-    content="With over 6 years of experience, I specialize in developing high-quality web applications using JavaScript, Python, React, Node.js, and Django. I've worked on diverse projects like ShopEase and EduTrack, delivering robust solutions for various industries. Passionate about clean code and innovative problem-solving, I thrive in both frontend and backend development, ensuring optimal performance and user experience." />
-
-  <!-- <meta property="og:url" content="https://WendyBlack.site" /> -->
-  <meta property="og:site_name" content="Wendy Black Portfolio" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- <meta name="twitter:site" content="@Vinod_Jangid07" /> -->
-  <meta name="twitter:title" content="Wendy Black | Portfolio" />
-  <meta name="twitter:description"
-  content="With over 6 years of experience, I specialize in developing high-quality web applications using JavaScript, Python, React, Node.js, and Django. I've worked on diverse projects like ShopEase and EduTrack, delivering robust solutions for various industries. Passionate about clean code and innovative problem-solving, I thrive in both frontend and backend development, ensuring optimal performance and user experience." />
-  <meta name="twitter:image" content="./src/png/Preview-card-min.png" />
-  <title>Wendy Black | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
+  <title>Wendy Black — Senior Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" id="audioID" />
-  </audio>
-  <!-- <audio id="audioPlayer" src="src/mp3/preloader.mp3"></audio> -->
+  <!-- 3D Universe background -->
+  <canvas id="universe"></canvas>
 
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
-
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="Wendy Black logo">
-        <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
-        </div>
-      </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
-
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">Wendy Black</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-dark">🌙</span>
+          <span class="theme-icon theme-icon-light">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
+  </nav>
 
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
-        </li>
-      </ul>
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg">
+      <canvas id="petals"></canvas>
+      <div class="aurora aurora-1"></div>
+      <div class="aurora aurora-2"></div>
+      <div class="aurora aurora-3"></div>
+      <div class="mesh"></div>
     </div>
-    <!-- mobile toggle menu ends -->
-
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">H</p>
-          <p class="jello">e</p>
-          <p class="jello">l</p>
-          <p class="jello">l</p>
-          <p class="jello">o</p>
-          <p class="jello">!</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">W</p>
-          <p class="jello">e</p>
-          <p class="jello">n</p>
-          <p class="jello">d</p>
-          <p class="jello">y</p>
-          &nbsp;
-          <p class="jello">B</p>
-          <p class="jello">l</p>
-          <p class="jello">a</p>
-          <p class="jello">c</p>
-          <p class="jello">k</p>
-          <!-- <p class="jello">d</p> -->
-          <p class="jello">.</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <!-- <div>
-            <p class="jello">I</p>
-          </div> -->
-          <div>
-            <p class="jello">S</p>
-            <p class="jello">e</p>
-            <p class="jello">n</p>
-            <p class="jello">i</p>
-            <p class="jello">o</p>
-            <p class="jello">r</p>
-            <!-- <p class="jello">e</p>
-            <p class="jello">r</p> -->
-          </div>
-          <div>
-            <!-- <p class="jello">a</p>
-            <p class="jello">m</p>
-            &nbsp; -->
-            <p class="jello">F</p>  
-            <p class="jello">u</p>
-            <p class="jello">l</p>
-            <p class="jello">l</p>
-            &nbsp;
-            <p class="jello">S</p>
-            <p class="jello">t</p>
-            <p class="jello">a</p>
-            <p class="jello">c</p>
-            <p class="jello">k</p>
-          </div>
-          <div>
-            <p class="jello">D</p>
-            <p class="jello">e</p>
-            <p class="jello">v</p>
-            <!-- <p class="jello">i</p>
-            <p class="jello">o</p>
-            <p class="jello">r</p> -->
-            <!-- <p class="jello">e</p>
-            <p class="jello">r</p> -->
-          </div>
-          &nbsp;
-          <div>
-            <p class="jello">f</p>
-            <p class="jello">o</p>
-            <p class="jello">r</p>
-          </div>
-          &nbsp;
-          <div>
-            <p class="jello">w</p>
-            <p class="jello">e</p>
-            <p class="jello">b</p>
-            <p class="jello">.</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          With over 6 years of experience, I specialize in developing high-quality web applications using JavaScript, Python, React, Node.js, and Django. I've worked on diverse projects like ShopEase and EduTrack, delivering robust solutions for various industries. Passionate about clean code and innovative problem-solving, I thrive in both frontend and backend development, ensuring optimal performance and user experience.<br />
-          <br />
-          I would like to share my desire to gain more experience and career by undertaking more adventures and challenges.
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span>Available for opportunities</div>
+        <h1 class="hero-name">Wendy <span class="accent">Black</span></h1>
+        <p class="hero-role">Senior Full Stack Developer</p>
+        <p class="hero-summary">
+          Crafting elegant, high-performance digital experiences for 6 years.
+          Passionate about AI/ML integration, scalable architectures, and turning
+          complex ideas into beautiful, functional products.
         </p>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:WendyB1101@outlook.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer visualmodeshow" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
-            </div>
-
-            <div class="soundtogglebuttoncontainer soundmodeshow" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()"/>
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
-            </div>
-          </div>
-          <!-- setting div ends -->
+        <div class="hero-meta">
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Shanghai, China
+          </span>
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Tsinghua University, CS '20
+          </span>
         </div>
-        <!-- contact-btn-div -->
-      </div>
-     
-    </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              Hi, I am Wendy Black, a Full Stack Engineer with extensive experience in building modern web applications. I’m very skilled in web languages and frameworks like React, Next.js, TypeScript, Node.js, and Laravel, and I work confidently with databases and cloud deployment.
-            </p>
-            <br />
-            <p tabindex="0">
-              I am passionate about delivering high-quality work for clients, solving problems efficiently, and collaborating in dedicated, motivated teams.
-              I enjoy creating scalable, user-focused solutions and continuously learning to stay at the forefront of web development.
-            </p>
-            <br />
-            <!-- <p tabindex="0">
-              My main focus these days is building interesting & creative web
-            , I like to code things from scratch, and enjoy bringing
-              ideas to life in the browser.
-            </p> -->
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
-        <div class="text">Resume</div>
-      </button>
-          </div>
-          <div class="dp" data-aos="fade-up">
-            <img src="src/webp/vinod (2).webp" alt="Wendy Black" tabindex="0" aria-label="image of vinod" />
-          </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#projects" class="btn btn-outline">View my work</a>
+          <a href="Wendy_Black_Resume.pdf" target="_blank" rel="noopener" class="btn btn-resume" download="Wendy_Black_Resume.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            Resume
+          </a>
         </div>
       </div>
-    </section>
-    <!-- about section ends  -->
-
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
+      <div class="hero-photo-wrap">
+        <div class="photo-3d-inner">
+          <div class="photo-glow-ring"></div>
+          <div class="photo-ring"></div>
+          <div class="photo-ring photo-ring-2"></div>
+          <div class="photo-ring photo-ring-3"></div>
+          <img src="wendy.jpg" alt="Wendy Black" class="hero-photo" />
+          <div class="photo-shimmer"></div>
+          <div class="photo-gloss"></div>
         </div>
-
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="As a frontend a developer these are the skills i have">
-            Tech Stack
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-              <span class="tooltip">HTML</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-              <span class="tooltip">CSS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/tailwind.png" alt="tailwind skill" class="tech-stack-logo" />
-              <span class="tooltip">TAILWIND</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
-              <span class="tooltip">REACTJS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/nextlogo.png" alt="nextjs skill" class="tech-stack-logo" />
-              <span class="tooltip">NEXTJS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/node.png" alt="nodejs skill" class="tech-stack-logo" />
-              <span class="tooltip">NODEJS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/astro.png" alt="astro skill" class="tech-stack-logo" />
-              <span class="tooltip">ASTRO</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/tinacms.png" alt="tinacms skill" class="tech-stack-logo" />
-              <span class="tooltip">TINACMS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/contentfulcms.png" alt="contentful skill" class="tech-stack-logo" />
-              <span class="tooltip">CONTENTFUL</span>
-            </li>
-
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
-              <span class="tooltip">C</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE PS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-              <span class="tooltip">FIGMA</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE AI</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- skills section ends -->
-    <section class="projects-section-container" id="projects">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/asher-favicon.webp" alt="atomic asher website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Havenly</article>
-                <p class="ProjectDescription">
-                 Developed a sophisticated platform for Havenly. The platform facilitates seamless collaboration between
-clients and designers
-                </p>
-                <div class="project-buttons">
-                  <a href="https://havenly.com/" target="_blank" class="cta"
-                    aria-label="Visit atomicasher Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/1.webp" alt="atomicasher website preview image" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/ico/stopscams-favicon.ico" alt="stopscams website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">SmartBite</article>
-                <p class="ProjectDescription">
-                  Developed and enhanced SmartBite, a leading marketplace for business catering in Southeast Asia. The
-platform connects companies with a vast network of restaurants and caterers, facilitating seamless ordering
-and service for professional settings. SmartBite has become a top choice for businesses seeking reliable and
-high-quality catering solutions.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://trysmartbite.com/" target="_blank" class="cta"
-                    aria-label="Visit stopscams Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/2.webp" alt="stopscams website preview image" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/ico/notesync-favicon.ico" alt="notesync website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Star Of Boston</article>
-                <p class="ProjectDescription">
-                  Developed and launched a comprehensive web-based solution for short-term apartment rentals in Greater
-Boston. The STARS platform caters to various customer needs, including vacationers, business travelers,
-travel nurses, and visiting families. The platform provides a seamless search experience, stylish
-accommodations, and exceptional guest services, aiming to enhance user satisfaction and convenience.
-                </p>
-                <div class="project-buttons">
-                  <!-- <a href="https://github.com/WendyBlack07/notesync-supabase" target="_blank" class="github-redirect"
-                    aria-label="Visit Pexelicons on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a> -->
-                  <a href="https://www.starsofboston.com/" target="_blank" class="cta"
-                    aria-label="Visit NoteSync Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/3.webp" alt="NoteSync website preview image" />
-              </div>
-            </div>
-          </div>
-          <!-- ---------------------- -->
-          <!-- <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/ico/wyd-favicon.ico" alt="withyourdog website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">With Your Dog</article>
-                <p class="ProjectDescription">
-                  WithYour.Dog: Discover dog-friendly places near you with our simple Airtable-powered app, integrated with Ola Maps for seamless navigation.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://withyour.dog" target="_blank" class="cta"
-                    aria-label="Visit withyourdog Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/wyd-preview.webp" alt="withyourdog website preview image" />
-              </div>
-            </div>
-          </div> -->
-          <!-- --------------------- -->
-
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- main ends here -->
-
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
-            "Learning, Living, and Leveling Up."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>GetinTouch();</article>
-          </div>
-          <div class="logos">
-            <!-- <a href="https://www.instagram.com/pexel_ui/" target="_blank" tabindex="0"
-              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-              </svg></a>
-
-            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer=" target="_blank"
-              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/WendyBlack07" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a> -->
-
-            <a href="mailto:WendyB1101@outlook.com" target="_blank" aria-label="My Outlook mail"><svg id="outlook"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <!-- <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
-            </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
-            </div>
-          </div>
-        </div> -->
-        <div class="footer-bottom">
-          <article>
-            full stack Engineer
-          </article>
+        <div class="photo-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          6 yrs experience
         </div>
       </div>
     </div>
-  </footer>
-  <!-- footer ends here -->
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
 
-  <script src="main.js"></script>
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Major Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Cloud Platforms</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+      </div>
 
-  <script>
-    function openURL() {
-      var url = "src/pdf/Wendy's resume.pdf";
-      
-      window.open(url, "_blank");
-    }
-  </script>
+      <div class="section-eyebrow">Expertise</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Frontend</h3>
+          <div class="skill-tags"><span>React</span><span>Next.js</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12H19M12 5l7 7-7 7"/></svg></div>
+          <h3>Backend</h3>
+          <div class="skill-tags"><span>Node.js</span><span>Python</span><span>Laravel</span><span>RESTful APIs</span><span>Microservices</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3>AI / ML & Image Processing</h3>
+          <div class="skill-tags"><span>Computer Vision</span><span>VTON</span><span>Recommendation Engines</span><span>ML Integration</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 1 0-.1-9.999 5.002 5.002 0 0 0-9.78 2.096A4.001 4.001 0 0 0 3 15z"/></svg></div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags"><span>AWS</span><span>GCP</span><span>Azure</span><span>Docker</span><span>Kubernetes</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+          <h3>Databases & Storage</h3>
+          <div class="skill-tags"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>S3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script>
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-eyebrow">Career</div>
+      <h2 class="section-title">Experience</h2>
 
-  
+      <!-- Photo experience cards -->
+      <div class="exp-grid">
 
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
+        <div class="exp-card timeline-item">
+          <div class="exp-img-wrap">
+            <img src="1.png" alt="Senior Full-Stack Developer" class="exp-img" />
+            <div class="exp-img-overlay"></div>`n            <div class="exp-img-shine"></div>
+            <span class="exp-date-badge">2024 – Present</span>
+          </div>
+          <div class="exp-body">
+            <h3>Senior Full-Stack Developer</h3>
+            <p class="exp-co">Current Role</p>
+            <ul class="timeline-list">
+              <li>Developed backend APIs supporting AI-powered image processing and virtual try-on features.</li>
+              <li>Integrated computer vision and ML models to generate realistic fashion model visualizations.</li>
+              <li>Optimized real-time image pipelines for performance and scalability on AWS/GCP.</li>
+              <li>Built RESTful services for seamless frontend-backend communication.</li>
+            </ul>
+            <div class="exp-footer">
+              <div class="exp-tags">
+                <span>AWS</span><span>GCP</span><span>Computer Vision</span><span>Node.js</span>
+              </div>
+              <a href="https://havenly.com/" target="_blank" rel="noopener" class="exp-link">
+                Visit site
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
+        <div class="exp-card timeline-item">
+          <div class="exp-img-wrap">
+            <img src="2.png" alt="Full-Stack Developer" class="exp-img" />
+            <div class="exp-img-overlay"></div>`n            <div class="exp-img-shine"></div>
+            <span class="exp-date-badge">2022 – 2023</span>
+          </div>
+          <div class="exp-body">
+            <h3>Full-Stack Developer</h3>
+            <p class="exp-co">Previous Role</p>
+            <ul class="timeline-list">
+              <li>Designed and implemented scalable web applications with React and Node.js.</li>
+              <li>Developed backend services for image handling and cloud-based storage management.</li>
+              <li>Supported deployment and maintenance of cloud-native applications on AWS and Azure.</li>
+              <li>Integrated AI/ML features into user-facing applications with cross-functional teams.</li>
+            </ul>
+            <div class="exp-footer">
+              <div class="exp-tags">
+                <span>React</span><span>Node.js</span><span>Azure</span><span>AWS</span>
+              </div>
+              <a href="https://trysmartbite.com/" target="_blank" rel="noopener" class="exp-link">
+                Visit site
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
+        <div class="exp-card timeline-item">
+          <div class="exp-img-wrap">
+            <img src="3.png" alt="Tsinghua University" class="exp-img" />
+            <div class="exp-img-overlay"></div>`n            <div class="exp-img-shine"></div>
+            <span class="exp-date-badge">2020</span>
+          </div>
+          <div class="exp-body">
+            <h3>Bachelor's in Computer Science</h3>
+            <p class="exp-co">Tsinghua University — Beijing, China</p>
+            <ul class="timeline-list">
+              <li>Focused on full-stack development, web technologies, and cloud computing.</li>
+              <li>Completed projects on scalable web apps and AI-powered systems.</li>
+              <li>Won 1st place in the university's annual hackathon (2019).</li>
+            </ul>
+            <div class="exp-footer">
+              <div class="exp-tags">
+                <span>Full-Stack</span><span>AI Systems</span><span>Hackathon Winner</span>
+              </div>
+              <a href="https://www.starsofboston.com/" target="_blank" rel="noopener" class="exp-link">
+                Visit site
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
+      </div>
+    </div>
+  </section>
 
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-eyebrow">Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <h3>Havenly</h3>
+          <p>A sophisticated platform facilitating seamless collaboration between clients and interior designers. Built for scale with real-time communication and rich media support.</p>
+          <div class="project-card-footer">
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>Cloud</span><span>Real-time</span></div>
+            <a href="https://havenly.com/" target="_blank" rel="noopener" class="project-link" aria-label="Visit Havenly">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <h3>SmartBite</h3>
+          <p>A leading marketplace for business catering in Southeast Asia, connecting companies with a vast network of restaurants and caterers for professional settings.</p>
+          <div class="project-card-footer">
+            <div class="project-tags"><span>Marketplace</span><span>Full-Stack</span><span>SEA</span><span>B2B</span></div>
+            <a href="https://trysmartbite.com/" target="_blank" rel="noopener" class="project-link" aria-label="Visit SmartBite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <h3>Star of Boston</h3>
+          <p>A comprehensive web solution for short-term apartment rentals in Greater Boston, serving vacationers, business travelers, travel nurses, and visiting families.</p>
+          <div class="project-card-footer">
+            <div class="project-tags"><span>Next.js</span><span>Rental Platform</span><span>Search UX</span><span>AWS</span></div>
+            <a href="https://www.starsofboston.com/" target="_blank" rel="noopener" class="project-link" aria-label="Visit Stars of Boston">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
- <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
- <script>
- 
-</script>
-<!-- <script>
-  kofiWidgetOverlay.draw('WendyBlack07', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#794bc4',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script> -->
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <div class="section-eyebrow">Let's connect</div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="contact-sub">Open to exciting opportunities, meaningful collaborations, and projects that make a difference.</p>
+          <a href="mailto:WendyB1101@outlook.com" class="contact-email-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            WendyB1101@outlook.com
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwzgkqv" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="formSubmit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send message
+          </button>
+          <p class="form-success" id="formSuccess">✦ Message sent — I'll be in touch soon!</p>
+          <p class="form-error" id="formError">Something went wrong. Please try again.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer">© 2026 Wendy Black · Crafted with passion</div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
+
+
