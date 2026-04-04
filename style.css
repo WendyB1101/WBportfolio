@@ -1424,3 +1424,66 @@ body {
   .skills-grid { grid-template-columns: 1fr; }
   .scroll-top { bottom: 1.25rem; right: 1.25rem; width: 46px; height: 46px; }
 }
+
+/* ===== NEW / UPDATED STYLES ===== */
+
+/* Meta links in hero */
+.meta-link {
+  text-decoration: none;
+  transition: color var(--t);
+}
+.meta-link:hover { color: var(--rose-bright); }
+
+/* Project date line */
+.project-date {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose-dim);
+  margin-bottom: 0.6rem !important;
+}
+
+/* Contact social links */
+.contact-links {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  transition: all var(--t);
+  letter-spacing: 0.04em;
+}
+
+.contact-social svg { width: 14px; height: 14px; stroke: currentColor; }
+
+.contact-social:hover {
+  color: var(--rose-bright);
+  border-color: rgba(244,167,185,0.4);
+  background: var(--rose-glow);
+  box-shadow: 0 0 16px var(--rose-glow);
+}
+
+/* Projects grid — allow up to 2 columns for 5 cards */
+.projects-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Contact email lines stacked */
+.contact-left .contact-email-line {
+  display: flex;
+}
